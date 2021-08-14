@@ -1,5 +1,5 @@
 <html>  
-  <h2>test29</h2>
+  <h2>test30</h2>
   
   <audio controls id="audio1" style="position: absolute;left: 250px;">
      <source src="a.m4a" type="audio/mp4">
@@ -11,6 +11,14 @@ var audioElement = document.getElementById("audio1");
 audioElement.addEventListener('play', test);
 audioElement.addEventListener('loadstart',loadstart );
  
+  
+ 
+  document.addEventListener("DOMContentLoaded", function(event) {
+    audioElement.play();
+  });
+
+  
+  
   
   function sleepFor(sleepDuration){
     var now = new Date().getTime();
