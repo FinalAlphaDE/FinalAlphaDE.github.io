@@ -1,11 +1,11 @@
 <html>  
-  <h2>test59</h2>
+  <h2>test60</h2>
   
   <audio muted autoplay controls id="audio1">  //style="position: absolute;left: 250px;">
      <source src="a.m4a" type="audio/mp4">
   </audio>
   <!--
-  <video muted autoplay controls id="video1">
+  <video muted controls id="video1">
      <source src="FullSizeRender.mov" type="video/mp4">
   </video>
 -->
@@ -14,7 +14,7 @@
 var ve = document.getElementById("audio1");
 ve.addEventListener('play', play);
 ve.addEventListener('ended',ended );
-//ve.addEventListener('loaded',loaded );
+ve.addEventListener('loaded',loaded );
   
  
  // document.addEventListener("DOMContentLoaded", function(event) {
