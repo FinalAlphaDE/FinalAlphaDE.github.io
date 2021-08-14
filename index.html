@@ -1,7 +1,8 @@
 <html>
 <script>
 document.addEventListener('keydown', logKey);
-
+  
+document.addEventListener('volumeupbutton', logKey);
 function logKey(e) {
   alert(e.key)
 }
