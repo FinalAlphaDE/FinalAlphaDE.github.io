@@ -14,7 +14,7 @@ audioElement.addEventListener('loadstart',loadstart );
   
  
   document.addEventListener("DOMContentLoaded", function(event) {
-    
+    // bei aufruf  button click wird alert aber nicht play ausgeführt
     //audioElement.play();
     //document.getElementById("button1").click();
   });
@@ -36,6 +36,7 @@ audioElement.addEventListener('loadstart',loadstart );
   }
   
 function test() {
+  audioElement.muted = false;
   alert("play");
 }
 </script>
