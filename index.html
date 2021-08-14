@@ -1,5 +1,5 @@
 <html>  
-  <h2>test38</h2>
+  <h2>test39</h2>
   
   <audio controls id="audio1" autoplay muted style="position: absolute;left: 250px;">
      <source src="a.m4a" type="audio/mp4">
@@ -9,7 +9,7 @@
 <script>
 var audioElement = document.getElementById("audio1");
 audioElement.addEventListener('play', play);
-audioElement.addEventListener('pause',pause );
+audioElement.addEventListener('ended',ended );
  
   
  
@@ -29,9 +29,9 @@ audioElement.addEventListener('pause',pause );
     }
 }
   
-  function pause() {
+  function ended() {
      audioElement.muted = false;
-    alert("pause");
+    alert("ended");
   }
   
 function play() {
