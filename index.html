@@ -5,8 +5,10 @@
 //document.addEventListener('volumeupbutton', logKey);
   
   var audioElement = document.getElementById("audio1");
-audioElement.addEventListener('play', () => {
-  alert("playing");
+audioElement.addEventListener('play', test);
+  
+  function test() {
+  alert("play");
   // The duration variable now holds the duration (in seconds) of the audio clip
 })
   
@@ -17,7 +19,7 @@ function logKey(e) {
   <form>
 <input type="text">
   </form>
-  <h2>test4</h2>
+  <h2>test5</h2>
   
   <audio controls id="audio1">
   <source src="a.m4a" type="audio/mp4">
