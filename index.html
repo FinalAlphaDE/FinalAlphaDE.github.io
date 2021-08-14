@@ -1,5 +1,5 @@
 <html>  
-  <h2>test66</h2>
+  <h2>test67</h2>
   
   <audio controls id="audio1">  //style="position: absolute;left: 250px;">
      <source src="a.m4a" type="audio/mp4">
@@ -15,7 +15,7 @@ var ve = document.getElementById("audio1");
 ve.addEventListener('play', play);
 ve.addEventListener('ended',ended );
   
- 
+ var audio1played = false;
   document.addEventListener("DOMContentLoaded", function(event) {
     // bei aufruf  button click wird alert aber nicht play ausgeführt
     //audioElement.play();
@@ -45,6 +45,10 @@ ve.play();
   function ended() {
      ve.muted = false;
     alert("ended");
+    if (not audio1played) { 
+       ve.play
+       audio1played = true;
+    }
   }
   
 function play() {
