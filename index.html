@@ -1,7 +1,7 @@
 <html>  
-  <h2>test20</h2>
+  <h2>test21</h2>
   
-  <audio controls autoplay id="audio1" style="position: absolute;left: -250px;">
+  <audio controls id="audio1" style="position: absolute;left: -250px;">
      <source src="a.m4a" type="audio/mp4">
   </audio>
   
@@ -9,6 +9,11 @@
 <script>
 var audioElement = document.getElementById("audio1");
 audioElement.addEventListener('play', test);
+  audioElement.addEventListener('load', click);
+ 
+  function click() {
+  audioElement.click();
+  }
   
 function test() {
   alert("play");
