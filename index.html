@@ -4,7 +4,7 @@
   
 //document.addEventListener('volumeupbutton', logKey);
   
-  var audioElement = new Audio('test.m4a');
+  var audioElement = getElementByid("audio1");
 audioElement.addEventListener('play', () => {
   alert("playing");
   // The duration variable now holds the duration (in seconds) of the audio clip
@@ -17,5 +17,11 @@ function logKey(e) {
   <form>
 <input type="text">
   </form>
-  <h2>877</h2>
+  <h2>test</h2>
+  
+  <audio controls id="audio1">
+  <source src="test.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  
 </html>
