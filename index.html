@@ -2,12 +2,18 @@
   
   <h1 id="h1">test h1</h1>
   
+  <audio controls id="audio1">
+  <source src="a.m4a" type="audio/mp4">
+Your browser does not support the audio element.
+</audio>
+  
+  
 <script>
 //document.addEventListener('keydown', logKey);
   
 //document.addEventListener('volumeupbutton', logKey);
   
-  var audioElement = document.getElementById("h1");
+  var audioElement = document.getElementById("audio1");
   alert(audioElement);
 audioElement.addEventListener('play', test);
   
@@ -24,10 +30,6 @@ function logKey(e) {
 <input type="text">
   </form>
   <h2>test8</h2>
-  
-  <audio controls id="audio1">
-  <source src="a.m4a" type="audio/mp4">
-Your browser does not support the audio element.
-</audio>
+ 
   
 </html>
