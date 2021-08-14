@@ -1,5 +1,5 @@
 <html>  
-  <h2>test26</h2>
+  <h2>test27</h2>
   
   <audio controls id="audio1" style="position: absolute;left: 250px;">
      <source src="a.m4a" type="audio/mp4">
@@ -9,10 +9,10 @@
 <script>
 var audioElement = document.getElementById("audio1");
 audioElement.addEventListener('play', test);
-  audioElement.addEventListener('load', play);
+  audioElement.addEventListener('canplay', canplay);
  
-  function play() {
-    alert("audioelement loaded");
+  function canplay() {
+    alert("audioelement canplay");
   audioElement.play();
   }
   
