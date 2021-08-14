@@ -1,7 +1,7 @@
 <html>  
-  <h2>test60</h2>
+  <h2>test61</h2>
   
-  <audio muted autoplay controls id="audio1">  //style="position: absolute;left: 250px;">
+  <audio controls id="audio1">  //style="position: absolute;left: 250px;">
      <source src="a.m4a" type="audio/mp4">
   </audio>
   <!--
@@ -33,7 +33,8 @@ ve.addEventListener('loaded',loaded );
     }
 }
   function loaded(){
-audioElement.play();
+    ve.muted = true;
+ve.play();
   }
   function ended() {
      ve.muted = false;
